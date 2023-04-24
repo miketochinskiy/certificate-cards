@@ -44,11 +44,11 @@ body {
 .front {
     background: rgb(8, 64, 107);
     padding:10px;
-    
+    text-align: center;
 }
 
 .back {
-    background: rgb(184, 184, 184);
+    background:rgb(8, 64, 107);
     /* flip it default   */
     transform: rotateY(180deg);
     padding:10px;
