@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/007/215/425/non_2x/halftone-background-big-polka-dot-seamless-pattern-wallpaper-black-and-white-seamless-texture-for-wrapping-paper-or-decoration-classic-fabric-or-surface-illustation-free-vector.jpg);
 }
 
 
@@ -23,10 +24,8 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-
     cursor: pointer;
     transition: transform 1s;
-
     /* preserve child 3d   */
     transform-style: preserve-3d;
 }
@@ -36,19 +35,23 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-
     /* hide back face   */
     backface-visibility: hidden;
+    color: white;
+    border-radius: 25px;
 }
 
 .front {
-    background: coral;
+    background: rgb(8, 64, 107);
+    padding:10px;
+    
 }
 
 .back {
-    background: cornflowerblue;
+    background: rgb(184, 184, 184);
     /* flip it default   */
     transform: rotateY(180deg);
+    padding:10px;
 }
 
 /* flip card
@@ -56,6 +59,39 @@ body {
   */
 .flipped {
     transform: rotateY(180deg);
+}
+
+#card1 {
+    background: url("https://s.yimg.com/ny/api/res/1.2/E3o0EAgQ8eMN0Ck.WN1mPg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MA--/https://media.zenfs.com/en/live_science_953/cc9fa1a8b5fac87a59caa90a99968ec2") center center no-repeat;
+    background-size: auto 100%;
+    background-position-x: -320px;
+}   
+
+#card2 {
+    background-image: url("https://discover.kent.edu/hubfs/Blog%20Images/UX%20career%20path.jpg");
+    background-color: #000;
+    background-size: auto 100%;
+    background-position-x: -300px;
+}
+
+#card3 {
+    background-image: url("https://www.usnews.com/object/image/00000181-720e-d4b9-afad-772fea650000/gettyimages-1363772590.jpg?update-time=1655476133218&size=responsive640");
+    background-color: #000;
+    background-size: auto 100%;
+    background-position-x: -300px;
+}
+
+#card4 {
+    background-image: url("https://lh4.googleusercontent.com/q7K-pM__gtMwHNyLia-lK_uNV_bro-qXHDN8Nj1_y3a7eqinjubO5Xnc5862HBcejqgtkCN5foTacNqGB_fZ4krLpuO8HIxawg_NglMKHmdLxbl6LoBKVUCZUwuJaFEQPzqGFj5a");
+    background-color: #000;
+    background-size: auto 100%;
+    background-position-x: -150px;
+}
+
+#card5 {
+    background: url("https://adoptostaging.blob.core.windows.net/media/game-developer-job-description-RWRCQd.jpg") no-repeat;
+    background-size: auto 100%;
+    background-position-x: -180px;
 }
 
 /* Media Query for Mobile */
